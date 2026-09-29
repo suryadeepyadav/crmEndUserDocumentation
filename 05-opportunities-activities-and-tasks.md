@@ -132,14 +132,21 @@ The current opportunity page focuses on requirements, quotes, and stage history;
 
 ## Tasks page
 
-The Tasks page shows open work assigned to you or visible within your scope. Use these filters:
+The Tasks page shows current and historical work assigned to you or visible within your scope. First choose a Task status:
+
+- **Open** — work that still needs action;
+- **Completed** — finished work, including completion time and recorded outcome;
+- **Cancelled** — work that was no longer required; or
+- **All** — open, completed, and cancelled tasks together.
+
+When Open is selected, use the Due date filters:
 
 - **All open** — every open task in the current result set;
 - **Today** — tasks due today;
 - **Overdue** — due time has passed; and
 - **Upcoming** — due after today.
 
-The current page loads up to 100 open tasks. It does not offer pagination, search, or column sorting.
+The current page loads up to 100 tasks for the selected view. Open work is ordered by due time; completed work shows the most recently completed items first. The page does not offer pagination, search, or clickable column sorting.
 
 Each task shows:
 
@@ -180,11 +187,11 @@ Reschedule only when there is a valid new date. If a customer delays a meeting, 
 
 Write an outcome that helps the next person understand the result, for example: “Customer confirmed survey for 4 October; access instructions received.”
 
-Completed tasks leave the open task list.
+Completed tasks leave the Open view. Select **Completed** to review the completion time and outcome, or **All** to see them together with other task statuses.
 
 ## Cancelling a task
 
-Use **Cancel** when the task is no longer required, not when it is merely late. A cancelled task leaves the open list but remains part of history.
+Use **Cancel** when the task is no longer required, not when it is merely late. Review the confirmation message and select **Cancel task** to continue, or **Go back** to keep it open. A cancelled task leaves the Open view but remains available under Cancelled and All.
 
 ## How tasks are created
 

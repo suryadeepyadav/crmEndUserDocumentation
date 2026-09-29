@@ -52,7 +52,7 @@ These are separate. Giving a role does not automatically mean every record is vi
 
 ### Activating and deactivating
 
-The user list shows name, branch, status, and last sign-in. Select **Deactivate** to remove access; active sessions end immediately. Select **Activate** to restore sign-in when appropriate.
+The user list shows name, branch, status, and last sign-in. Select **Deactivate**, review the immediate-access warning, and confirm **Deactivate user** to remove access; active sessions end immediately. Select **Activate** to restore sign-in when appropriate.
 
 Do not create a replacement user simply because an employee changes branch. The current Administration screen does not provide a full edit form for roles and scopes after creation, so coordinate such changes through the authorized administrative process.
 
@@ -252,7 +252,7 @@ The list shows policy name, threshold, and status. Policies can be enabled or di
 
 Order matters. The first selected role reviews before the next. Test the policy using representative amounts and discounts before relying on it.
 
-Disabling a policy affects future matching. Do not use enable/disable casually while quotes are under review.
+Disabling a policy affects future matching. The CRM asks for confirmation before disabling it. Do not use enable/disable casually while quotes are under review.
 
 ## Industries
 

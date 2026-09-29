@@ -120,7 +120,7 @@ Clear the text and press Enter or select **Refresh** to return to the unfiltered
 
 ### Filters
 
-Filters narrow the list without changing any record. Lead inbox includes status and response-overdue filters. Tasks includes All open, Today, Overdue, and Upcoming filters.
+Filters narrow the list without changing any record. Lead inbox includes status and response-overdue filters. Tasks includes Open, Completed, Cancelled, and All status views. Open tasks can also be filtered by All open, Today, Overdue, and Upcoming.
 
 ### Refresh
 

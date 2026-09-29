@@ -70,7 +70,7 @@ For a security requirement at a manufacturing plant:
 1. Review the requirement card on the opportunity.
 2. Confirm that dates, quantities, and service-specific answers are complete.
 3. Select **Freeze & approve**.
-4. Confirm the action.
+4. Read the immutable-snapshot warning and select **Freeze & approve** again to confirm, or **Go back** to review the requirement.
 
 Approval creates an immutable snapshot so later quote and handover records can point to the exact information that was approved. Treat this as a business approval, not a draft-save shortcut.
 

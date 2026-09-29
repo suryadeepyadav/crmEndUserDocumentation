@@ -114,7 +114,8 @@ Depending on status and permission, actions include:
 1. Review every line, rate, discount, tax, date, and term.
 2. Open the generated PDF and confirm the customer-facing result.
 3. Select **Submit for approval**.
-4. The status becomes Pending approval when approval steps apply.
+4. Review the confirmation message and select **Submit for approval** again.
+5. The status becomes Pending approval when approval steps apply.
 
 Approval rules may depend on branch, amount, discount, commercial exception, and ordered approver roles. The CRM evaluates the configured policy; users should not bypass it by changing a value without a genuine business reason.
 
@@ -160,7 +161,7 @@ After the approved PDF has actually been issued to the customer:
 
 1. open the approved quote;
 2. select **Mark sent**; and
-3. confirm.
+3. confirm that the approved version was actually issued to the customer by selecting **Mark sent** again in the confirmation dialog.
 
 Do not mark it Sent merely because approval completed. Sent means the customer received that approved version through the organization’s approved communication process.
 

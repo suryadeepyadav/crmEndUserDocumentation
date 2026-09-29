@@ -88,7 +88,8 @@ Activation confirms that signed commercial evidence has been attached. This is r
 2. Find the **Activate** section.
 3. Choose the signed agreement file.
 4. Select **Upload and activate**.
-5. Confirm that the status changes to Active.
+5. Check the file name in the confirmation dialog and select **Upload and activate** again.
+6. Confirm that the status changes to Active.
 
 The screen accepts PDF, JPEG, and PNG files, up to 10 MB. Upload a complete, legible, authorized document. The production environment may apply additional file-security checks.
 

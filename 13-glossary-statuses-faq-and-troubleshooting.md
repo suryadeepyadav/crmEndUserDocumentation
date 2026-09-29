@@ -139,6 +139,10 @@ Convert a qualified lead. The current application does not have a standalone New
 
 Tasks are currently created through workflows such as lead conversion and system reminders. The Tasks page can edit, complete, and cancel open tasks but has no general New Task button.
 
+### Where can I see a completed or cancelled task?
+
+Open **Tasks** and select **Completed** or **Cancelled** under Task status. Completed tasks show the recorded completion time and outcome. Select **All** to view every status together.
+
 ### Why is a lead still response-overdue after I added a note?
 
 Only an appropriate customer-contact activity, such as Call, Email, or Meeting, records the first response. Log the activity using the actual occurred time.

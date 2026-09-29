@@ -110,8 +110,8 @@ Your ownership, branch, region, or role scope may differ from theirs.
 **A lead remains overdue after I added a note.**  
 Record a customer-contact activity such as Call, Email, or Meeting. An internal note is not a first response.
 
-**A completed task is no longer shown.**  
-The Tasks page is designed around open work. Completed and cancelled items leave the open list.
+**A completed task is no longer shown in Open.**  
+Open Tasks and select **Completed** under Task status. The completed task shows its completion time and recorded outcome. Select **Cancelled** for cancelled work or **All** for all statuses.
 
 **The numbers did not change immediately.**  
 Select Refresh or reload the page. If the value remains wrong, verify the underlying record before reporting a problem.
