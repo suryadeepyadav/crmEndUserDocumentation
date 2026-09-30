@@ -23,10 +23,13 @@ Signing in confirms your identity and opens only the records and actions you are
 1. Open the CRM address.
 2. Enter your **Email address**.
 3. Enter your **Password**.
-4. Select **Sign in securely**.
+   - Password characters are hidden by default.
+   - Select the eye icon inside the field to temporarily show the password, and select it again to hide the password.
+4. Select **Sign in**.
 5. The application opens the Dashboard after a successful sign-in.
 
 Email addresses are not case-sensitive, but the password is. Do not share passwords or allow another person to work under your account; important actions are recorded against the signed-in user.
+Before signing in, hide the password again if another person can see your screen.
 
 ### If sign-in fails
 

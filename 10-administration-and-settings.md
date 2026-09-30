@@ -36,11 +36,14 @@ Select **Add user** and complete:
 | First name / Last name | Employee’s correct name                                      |
 | Email                  | Unique work email used for sign-in                           |
 | Temporary password     | Initial password of at least 12 characters; deliver securely |
+| Timezone               | User's working timezone, for example `Asia/Kolkata`          |
 | Primary branch         | User’s home/responsible branch                               |
-| Reporting manager      | User’s manager in the CRM structure, if applicable           |
+| Reporting manager      | Active manager selected from the user list, if applicable    |
 | Roles                  | One or more permission groups                                |
 | Visible branches       | Additional branches whose records the user may see           |
 | Visible regions        | Regions whose branch records the user may see                |
+
+The temporary password is hidden by default. Select the eye icon in the field to check what you entered, then hide it again before another person can see the screen.
 
 ### Primary branch, role, and scope
 
@@ -50,11 +53,29 @@ Select **Add user** and complete:
 
 These are separate. Giving a role does not automatically mean every record is visible, and adding a visible branch does not automatically grant every action.
 
+### Editing a user
+
+Select **Edit** beside a user to update:
+
+- first and last name;
+- sign-in email;
+- timezone;
+- primary branch;
+- reporting manager;
+- roles; and
+- visible branches and regions.
+
+The form opens with the user's current values selected. The Reporting manager field shows **Select a reporting manager** when none is assigned, and its options show each active user's name and email. A user cannot be their own reporting manager. If the current manager has become inactive, the option is identified as inactive so the administrator can replace or clear it.
+
+The temporary password is shown only when creating a user. Use the password-reset process when an existing user's password must change.
+
+If another administrator updated the same user first, refresh the Administration page and review the latest version before saving again.
+
 ### Activating and deactivating
 
 The user list shows name, branch, status, and last sign-in. Select **Deactivate**, review the immediate-access warning, and confirm **Deactivate user** to remove access; active sessions end immediately. Select **Activate** to restore sign-in when appropriate.
 
-Do not create a replacement user simply because an employee changes branch. The current Administration screen does not provide a full edit form for roles and scopes after creation, so coordinate such changes through the authorized administrative process.
+Do not create a replacement user simply because an employee changes branch, manager, role, or scope. Select **Edit** and maintain the existing user so ownership and audit history remain connected.
 
 ## Services
 
