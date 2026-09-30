@@ -138,9 +138,18 @@ The current tables do not provide clickable column sorting. Lists use their buil
 
 Required fields are identified in the form. Save buttons remain the final confirmation that you want to create or update the record. If validation fails, correct the field highlighted by the form and try again.
 
-### Delete
+### Archive and delete
 
-The current user interface generally does not permanently delete business records. It uses safer business actions such as:
+The CRM does not permanently delete core business records from normal screens. Authorized users can instead select **Archive** on a lead, account, contact, location, or eligible opportunity. Archiving:
+
+- asks for a business reason;
+- removes the record from normal active lists and detail access;
+- preserves its database and audit history; and
+- may be blocked when the record is still used by commercial or operational records.
+
+There is currently no archived-record list or Restore button, so review the confirmation message carefully. Archive is not a substitute for the correct business status. For example, mark a genuine unsuccessful opportunity **Lost** instead of archiving it merely because it was not won.
+
+Other safer business actions include:
 
 - deactivating a user;
 - cancelling a task;

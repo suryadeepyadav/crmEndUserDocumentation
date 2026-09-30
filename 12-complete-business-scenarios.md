@@ -160,7 +160,7 @@ The customer selects an incumbent national vendor.
 5. They enter context: decision date, known reason, and possible future revisit.
 6. The CRM adds the change to stage history and the deal appears in lost performance.
 
-The user does not delete the account or opportunity. The history is useful for reporting and future relationship work.
+The user does not archive the account or opportunity merely because the deal was lost. The Lost stage preserves useful reporting and future relationship history.
 
 ## Scenario 5 — Approver requests quote changes
 

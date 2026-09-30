@@ -109,6 +109,34 @@ Open a row in Lead inbox to see:
 
 Converted, disqualified, and duplicate leads are retained as history and cannot be converted again.
 
+## Editing a lead
+
+Users with lead-update permission can select **Edit** on the lead detail page. Use this action to correct or update the same enquiry.
+
+| Field                | Guidance                                                                    |
+| -------------------- | --------------------------------------------------------------------------- |
+| Company name         | Correct or current organization name for this enquiry                       |
+| Contact name         | Correct name of the person representing the enquiry                         |
+| Email and phone      | Verified contact details; either value may be cleared if it is not reliable |
+| City                 | City connected to the prospect or requested service                         |
+| Preferred start date | Customer's requested service start date, when known                         |
+| Lead source          | Correct origin of the enquiry                                               |
+| Services             | One or more services currently requested                                    |
+| Enquiry notes        | Useful updated context about need, scale, timing, or constraints            |
+
+Editing does not change the lead's branch or owner. Assignment is a separate controlled action and is not exposed on the current screen. Saving uses the latest version of the lead; if another user changed it first, refresh and review the newer information before trying again.
+
+## Archiving a lead
+
+Users with lead-update permission can select **Archive** when a lead should leave active CRM views, for example when it was created only for testing or entered in error and no normal lead status correctly represents it.
+
+1. Open the lead and select **Archive**.
+2. Read the confirmation message.
+3. Enter a clear reason of at least three characters.
+4. Select **Archive lead**.
+
+The lead and its related task records leave normal active views, while audit history is retained. There is currently no Restore button. Do not archive a genuine lost or unsuitable enquiry merely to avoid using the proper disqualification or duplicate process.
+
 ## Recording an activity
 
 ### What an activity is
@@ -290,6 +318,9 @@ Record a Call, Email, or Meeting activity.
 
 **Convert lead is missing.**  
 The lead may already be converted, disqualified, or marked duplicate, or your role may not have conversion permission.
+
+**Edit or Archive is missing.**  
+Your role may not have lead-update permission, or the record may be outside your ownership, branch, or regional scope.
 
 **Some CSV rows did not import.**  
 Review whether they were marked invalid or possible duplicates. Correct required values and stable keys before trying those rows again.

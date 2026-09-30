@@ -34,9 +34,9 @@ If a page or button in this guide is not visible to you, your account probably d
 ## Main features
 
 - Dashboard with lead, task, and pipeline summaries
-- Lead capture, website intake, duplicate suggestions, CSV import, and CSV export
-- Account, contact, location, and account-review records
-- Opportunity pipeline in table and Kanban views
+- Lead capture, editing, safe archiving, website intake, duplicate suggestions, CSV import, and CSV export
+- Account, contact, location, and account-review records with permission-controlled maintenance
+- Opportunity pipeline in table and Kanban views, including editing, stage changes, and safe archiving
 - Activities, follow-up tasks, priorities, and due dates
 - Service requirement forms and approved requirement snapshots
 - Site-survey scheduling
@@ -110,6 +110,7 @@ This guide describes only user-facing behavior that currently exists. In the pre
 
 - opportunities are created by converting a lead; there is no separate **New opportunity** form;
 - lead reassignment, merge, and disqualification are supported by the wider system but do not yet have buttons on the current screens;
+- authorized users can archive leads, accounts, contacts, locations, and eligible opportunities, but there is no restore screen or permanent-delete action;
 - site surveys can be scheduled, but there is not yet a screen for completing the checklist or uploading survey findings;
 - tasks can be edited, cancelled, and completed, but there is no general **New task** button;
 - quote revisions and resubmission after rejection do not yet have a user-facing button;

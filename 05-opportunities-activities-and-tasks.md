@@ -49,7 +49,7 @@ Open an opportunity to review:
 - quotes; and
 - stage-change history.
 
-Buttons available according to status and permission include **Edit**, **Change stage**, and an **Add** menu for Requirement, Site survey, Quote, or Contract. Contract creation is shown only after the opportunity is Won.
+Buttons available according to status and permission include **Edit**, **Change stage**, **Archive**, and an **Add** menu for Requirement, Site survey, Quote, or Contract. Contract creation is shown only after the opportunity is Won. Each Add-menu item is shown only when the user has the matching requirement, survey, quote, or contract permission.
 
 ## Editing an opportunity
 
@@ -67,6 +67,14 @@ Select **Edit** and update the relevant fields.
 | Next action time | Deadline for the next action                            |
 
 The current edit form requires a next action and next-action time. Keep them specific and current.
+
+## Archiving an opportunity
+
+Users with opportunity-management permission can select **Archive** for an opportunity created in error or otherwise eligible to leave the active pipeline. Enter a clear reason and confirm.
+
+The CRM blocks archiving when the opportunity has any requirement, site survey, quote, or non-archived contract. These records are commercial evidence and must retain their opportunity connection. When archiving is allowed, the opportunity and its related task records leave active pipeline/task views, while audit history remains. There is currently no Restore button.
+
+Do not archive a genuine unsuccessful deal. Move it to **Lost** with the correct loss reason so performance and history remain meaningful.
 
 ### Strong and weak next actions
 

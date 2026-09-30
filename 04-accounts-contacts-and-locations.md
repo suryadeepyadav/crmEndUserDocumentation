@@ -71,10 +71,19 @@ Select **Edit account** to update:
 
 - legal name;
 - trade name;
+- industry;
 - GSTIN; and
 - billing address.
 
-Use editing to correct or update the same organization. Do not change an account into a different customer. The current interface does not permanently delete accounts.
+Use editing to correct or update the same organization. Do not change an account into a different customer.
+
+### Archiving an account
+
+Users with account-management permission can select **Archive** when an account was created in error or should no longer appear in active account views. A reason is required.
+
+The CRM blocks the action while the account has any non-archived opportunity or contract. Archive eligible opportunities first where appropriate; accounts with contract history must be retained. When archiving is allowed, the account, its active contacts and locations, and its related task records leave normal active views. Audit history remains, but there is currently no Restore button.
+
+Do not archive a real customer simply because one opportunity was lost. Keep the account and record the opportunity's correct pipeline result.
 
 ## Contacts
 
@@ -124,9 +133,14 @@ For Northstar Textiles, add:
 
 If Kavita will be selected as the operational contact on a contract, ensure **Operations** is selected and the phone/email information is current.
 
-### Current limitation
+### Editing and archiving a contact
 
-The current account screen can add contacts but does not provide contact edit or delete buttons. Verify the information before saving. If a saved contact must be corrected, contact an authorized administrator or process owner.
+Users with account-management permission see Edit and Archive icons beside each contact.
+
+- Select the pencil icon to update name, role, influence, email, phone, and Sales/Operations/Billing flags.
+- Select the archive icon to remove the contact from the active account profile. Enter a clear reason and confirm.
+
+The CRM will not archive a contact that is still selected by a non-archived contract or service location. Update those records through the approved workflow first. There is currently no Restore button for an archived contact.
 
 ## Service locations
 
@@ -145,20 +159,26 @@ Add the location as soon as a site is known, and before scheduling a site survey
 3. Complete the address.
 4. Save.
 
-| Field          | What to enter                              | Required? |
-| -------------- | ------------------------------------------ | --------: |
-| Location name  | A recognizable name such as Pune Plant 1   |       Yes |
-| Address line 1 | Building, plot, street, or primary address |       Yes |
-| Address line 2 | Additional landmark, floor, or area        |        No |
-| City           | City or town                               |       Yes |
-| State          | State                                      |       Yes |
-| PIN            | Postal PIN code                            |        No |
+| Field          | What to enter                                    | Required? |
+| -------------- | ------------------------------------------------ | --------: |
+| Location name  | A recognizable name such as Pune Plant 1         |       Yes |
+| Address line 1 | Building, plot, street, or primary address       |       Yes |
+| Address line 2 | Additional landmark, floor, or area              |        No |
+| City           | City or town                                     |       Yes |
+| State          | State                                            |       Yes |
+| PIN            | Postal PIN code                                  |        No |
+| Site contact   | Existing active contact responsible for the site |        No |
 
 Use separate records for physically separate service sites, even when they belong to the same customer.
 
-### Current limitation
+### Editing and archiving a location
 
-The current screen does not provide location edit or delete buttons. Confirm the address before saving.
+Users with account-management permission see Edit and Archive icons beside each location.
+
+- Select the pencil icon to update the name, address, city, state, PIN, or site contact.
+- Select the archive icon when the location should leave the active account profile. Enter a reason and confirm.
+
+The selected site contact must belong to the same account. A location cannot be archived if it is used by a contract or site survey, because those records must retain their site history. There is currently no Restore button.
 
 ## Account reviews
 

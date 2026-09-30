@@ -43,6 +43,7 @@
 | Permission           | Specific action a role is allowed to perform                                                                        |
 | Stable key           | Permanent administrator identifier used by imports, rules, or integrations                                          |
 | Audit history        | Read-only record of important user and system actions                                                               |
+| Archive              | Remove an eligible record from normal active views without permanently deleting its stored audit history            |
 
 ## Status quick reference
 
@@ -127,9 +128,11 @@ Your role may not include that permission, or the record may be outside your bra
 
 The CRM does not reveal records outside your scope. Confirm ownership and branch with your manager or administrator.
 
-### Can I delete a lead, account, opportunity, quote, or contract?
+### Can I permanently delete a lead, account, contact, location, opportunity, quote, or contract?
 
-The current screens do not provide permanent delete actions for these business records. Use the correct business status, such as Lost, Cancelled, Disabled, or Deactivated. This keeps audit and reporting history.
+The screens do not permanently delete these business records. Authorized users can archive an eligible lead, account, contact, location, or opportunity after entering a reason. Dependency checks prevent archiving records that must be retained for contracts, surveys, requirements, or quotes. Quotes and contracts do not have an Archive action on the current screens.
+
+Use the correct business status whenever one applies, such as Lost, Cancelled, Disabled, or Deactivated. There is currently no archived-record list or Restore button.
 
 ### How do I create a new opportunity?
 
@@ -201,7 +204,11 @@ No. The current export downloads leads visible to your access scope rather than 
 
 ### Can I edit a contact or service location after saving?
 
-The current account screen does not provide edit or delete controls for contacts or locations. Verify before saving and contact the process owner for corrections.
+Yes, if your role has account-management permission and the account is within your scope. Open the account and use the pencil icon beside the contact or location. Use the Archive icon only when the record should leave active views; contacts and locations still used by contracts, surveys, or active site relationships cannot be archived.
+
+### Why was Archive rejected?
+
+Read the message in the confirmation dialog. The record may have been changed by another user, may be outside your permitted scope, or may still be required by another record. Common examples are an account with an opportunity or contract, a contact used by a contract/location, a location used by a contract/survey, or an opportunity with requirements, surveys, quotes, or a contract. Refresh before retrying and preserve the dependent history.
 
 ### How do I finish a site survey?
 
@@ -287,7 +294,6 @@ The current application does not yet provide user-facing controls for:
 - lead reassignment, disqualification, or merge;
 - standalone opportunity creation;
 - general task creation;
-- contact or location editing/deletion;
 - requirement editing after creation;
 - site-survey completion, findings, or photo upload;
 - quote revision, withdrawal, or resubmission;

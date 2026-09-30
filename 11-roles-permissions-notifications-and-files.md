@@ -28,7 +28,7 @@ The descriptions below explain the intended end-user purpose of the current stan
 **Typical work:**
 
 - create, update, contact, and convert owned leads;
-- work with accounts and opportunities within scope;
+- edit or archive eligible leads, accounts, contacts, locations, and opportunities within scope;
 - record activities and manage tasks;
 - create requirements and surveys;
 - create quotes and access permitted PDFs;
@@ -120,6 +120,8 @@ If a page, button, or record is missing:
 4. Ask the administrator to review your roles and visible branch/region scope.
 
 Do not ask a colleague to export or download restricted information as a workaround.
+
+Edit and Archive controls are permission-aware. Lead maintenance requires lead-update permission; account, contact, and location maintenance requires account-management permission; and opportunity maintenance requires opportunity-management permission. The API repeats these checks and also verifies ownership/branch/region scope.
 
 ## Notifications and reminders
 
