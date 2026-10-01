@@ -40,16 +40,11 @@ Check that:
 - you are using the correct CRM environment; and
 - your account has not been deactivated.
 
-Repeatedly trying an incorrect password may temporarily slow or block further attempts. If the problem remains, use **Forgot your password?** or contact the administrator.
+Repeatedly trying an incorrect password may temporarily slow or block further attempts. If the problem remains, contact the administrator. Self-service password recovery is intentionally not available from the sign-in screen.
 
-## Forgotten password
+## Password help
 
-1. On the Login page, select **Forgot your password?**
-2. Enter your registered email address.
-3. Select **Request reset**.
-4. The application shows a general confirmation whether or not the address matches an account. This protects account information.
-
-The current CRM can create a reset request, but the normal end-user page for opening a reset link and selecting a new password is not yet available. Follow the instructions supplied by your administrator. If you do not receive instructions, contact the administrator rather than making repeated requests.
+The **Forgot password** link is intentionally not shown in this CRM. If you cannot sign in, contact an administrator or your reporting manager. They can follow the organization’s approved access-recovery process without exposing a self-service reset option to every visitor.
 
 ## Account activation and deactivation
 
@@ -89,9 +84,13 @@ The menu is permission-aware. For example, a commercial approver may see Approva
 
 The role label identifies your primary displayed role. A user can have more than one role, and the permissions from those roles work together. The label may therefore show only one of the roles that contributes to your access.
 
-### Bell icon
+### Bell icon and notifications
 
-The current bell icon opens the **Tasks** page. Use the task filters to find work due today or overdue. The system can create internal notifications for events such as assignments, due tasks, and renewals, but there is not yet a separate notification-inbox screen.
+The bell shows the number of unread notifications. Select it to open the latest notifications, including lead assignments, task assignments, due-task reminders, and renewal reminders. Select an item to mark it read and open its related page when a link is available. Use Tasks as the detailed work list after opening a task notification.
+
+### Manage signed-in sessions
+
+Select the sessions icon in the profile area to see where your account is signed in. You can revoke another session if, for example, you signed in on a computer you no longer control. Revoking the current session signs you out immediately. Use this promptly if you suspect someone else has access to your account.
 
 ### Sign out
 
@@ -123,7 +122,7 @@ Clear the text and press Enter or select **Refresh** to return to the unfiltered
 
 ### Filters
 
-Filters narrow the list without changing any record. Lead inbox includes status and response-overdue filters. Tasks includes Open, Completed, Cancelled, and All status views. Open tasks can also be filtered by All open, Today, Overdue, and Upcoming.
+Filters narrow the list without changing any record. Lead inbox includes status, source, requested service, branch, owner (when permitted), received-date range, response-overdue, **Not yet contacted**, and **Possible duplicates** filters. Tasks includes Open, Completed, Cancelled, and All status views. Open tasks can also be filtered by All open, Today, Overdue, and Upcoming.
 
 ### Refresh
 

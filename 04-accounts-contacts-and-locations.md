@@ -213,11 +213,11 @@ The account page lists its opportunities and contracts. Select one to open the d
 - When are renewals due?
 - Which sites and contacts are involved?
 
-Although an empty account may prompt users to create an opportunity, the current user interface has no separate opportunity-creation form. Create new opportunities through lead conversion.
+To pursue a new request from an existing customer, open the account and select **New opportunity**. Enter a title, requested services, starting stage, estimated value, probability, expected close date, and a specific next action with its due time. The new opportunity remains linked to this account, so the customer organization does not need to be duplicated. Lead conversion remains the normal route for a new prospect.
 
 ## Important notes
 
-- Search before creating an account.
+- Search before creating an account. The New account form checks the entered legal name and GSTIN for visible possible matches before saving. Open a suggestion to review it, or select **Create anyway** only when it is truly a different organization.
 - Use the legal name for official records and the trade name for the familiar brand.
 - A contact belongs to one account in the current workflow.
 - A site survey cannot be scheduled until the account has at least one location.

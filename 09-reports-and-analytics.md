@@ -18,7 +18,7 @@ The current report page provides five tabs:
 - Renewals
 - Account expansion
 
-The page currently has no date/branch filters, CSV export, print control, pagination, or clickable sorting. The results reflect the report’s built-in rules and your current access scope.
+The page currently has no date/branch filters, print control, pagination, or clickable sorting. The results reflect the report’s built-in rules and your current access scope. Users with sensitive-export permission can select **Export current report** to download the selected tab as CSV; the action is recorded for audit.
 
 ## Pipeline report
 
@@ -56,7 +56,7 @@ If one owner has most opportunities in Qualification and none in Proposal Sent, 
 
 ### What it shows
 
-Lead cohorts group leads by the month they were received, for up to the report’s recent history window.
+The Lead cohorts tab first shows uncontacted New or Assigned leads grouped by **source** and **requested service**. A lead requesting two services appears once under each of those services. Below that, cohorts group leads by the month they were received, for up to the report’s recent history window.
 
 | Column                 | Meaning                                                               |
 | ---------------------- | --------------------------------------------------------------------- |
@@ -159,7 +159,7 @@ CRM reports use opportunity and contract records. They are not invoices, collect
 Open the opportunity and verify its stage and amount. Also check whether you are reading Won value or Open value.
 
 **Can I export or print a report?**  
-The current Reports page has no export or print action. Do not use the Leads export as a substitute for report data.
+If your role has sensitive-export permission, select **Export current report** to download the selected tab as CSV. The current page has no print control. Use the Leads export when you need filtered lead records rather than report totals.
 
 **Can I choose a custom date range?**  
 The current page does not have report date filters.

@@ -148,7 +148,7 @@ Expiry date − Renewal notice days
 
 For a contract expiring 31 December with 90 notice days, renewal action should begin around early October.
 
-Renewal information appears in the contract and Renewals report. The background worker can create renewal notifications when configured, but there is no separate notification-inbox screen. Review Contracts, Reports, Tasks, and the Dashboard as part of regular renewal management.
+Renewal information appears in the contract and Renewals report. The bell menu shows renewal notifications when the background reminder runs. Review Contracts, Reports, Tasks, and the Dashboard as part of regular renewal management.
 
 The current contract page does not provide a **Mark renewed** action. If the customer renews, follow the approved process for amendment or a new contract record as directed by the process owner.
 

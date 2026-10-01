@@ -94,7 +94,7 @@ Services are the HHCIL offerings users select on leads, opportunities, requireme
 
 Example stable key: `industrial_housekeeping`.
 
-The stable key may be used by imports and integrations. Do not change its meaning or reuse it for a different service. The current screen can add services but does not provide general edit, archive, or toggle controls.
+The stable key may be used by imports and integrations. Do not change its meaning or reuse it for a different service. Select **Edit** to change the displayed details, or **Disable** to remove a service from new selections while preserving historical records. Select **Enable** when it should be offered again. Existing stable keys cannot be edited in the form.
 
 ## Requirement templates
 
@@ -209,11 +209,11 @@ Assignment rules automatically decide how trusted website sales enquiries are ro
 
 Put narrow rules before broad fallback rules. For example, a Pune Security website rule should have a lower priority number than an Any Service Pune rule.
 
-After a change, submit an approved test enquiry and confirm branch, owner, and response target. Assignment rules affect website intake, not every manually created record.
+Use **Edit**, **Disable**, or **Enable** beside an existing rule when routing needs to change. After a change, submit an approved test enquiry and confirm branch, owner, and response target. Assignment rules affect website intake, not every manually created record.
 
 ### Activity types
 
-Activity types are the choices users see when logging lead interactions. Add a Name and Stable key. Typical initial values include Call, Email, Meeting, Site Survey, Internal Note, Follow-up, and Account Review.
+Activity types are the choices users see when logging interactions. Add a Name and Stable key. Typical initial values include Call, Email, Meeting, Site Survey, Site Visit, Internal Note, Follow-up, and Account Review. Edit or disable an existing type when appropriate; the stable key stays fixed.
 
 Do not create several labels for the same activity, because inconsistent selection weakens timeline and response reporting.
 
@@ -277,7 +277,7 @@ Disabling a policy affects future matching. The CRM asks for confirmation before
 
 ## Industries
 
-Industry is available on account/lead-conversion forms. The initial values include Manufacturing, Healthcare, Education, Retail, Hospitality, and Other. The current Administration page does not provide an industry-management control.
+Industry is available on account and lead-conversion forms. The initial values include Manufacturing, Healthcare, Education, Retail, Hospitality, and Other. Administration can add, edit, disable, and enable industries in the Structure area. Disabling an industry removes it from new selections but keeps historical references.
 
 ## Audit history
 

@@ -136,9 +136,7 @@ Use the correct business status whenever one applies, such as Lost, Cancelled, D
 
 ### How do I create a new opportunity?
 
-First record a Call, Email, or Meeting against the lead, then select **Mark as qualified**. Once
-the lead shows Qualified, select **Convert lead**. The current application does not have a
-standalone New Opportunity form.
+For a new prospect, record a Call, Email, or Meeting against the lead, mark it qualified, then select **Convert lead**. For an existing customer, open the Account page and select **New opportunity**. Both paths create an opportunity linked to an account.
 
 ### Why canâ€™t I mark a lead as qualified?
 
@@ -148,7 +146,7 @@ or cannot access the lead.
 
 ### How do I create a task?
 
-Tasks are currently created through workflows such as lead conversion and system reminders. The Tasks page can edit, complete, and cancel open tasks but has no general New Task button.
+Select **New task** on Tasks, or on a permitted lead, account, or opportunity. Enter the title, assignee, priority, and due time; optionally add details and a linked record. Lead conversion also creates an initial follow-up task automatically.
 
 ### Where can I see a completed or cancelled task?
 
@@ -160,7 +158,7 @@ Only an appropriate customer-contact activity, such as Call, Email, or Meeting, 
 
 ### How do I merge duplicate leads?
 
-The detail page shows suggestions, but the current screen has no Merge button. Do not convert both copies. Contact the authorized process owner.
+Open the duplicate lead that should be closed, select **Merge duplicate**, choose the surviving lead, enter a reason, and confirm. Review the two records first; activities, tasks, and services from the closed lead move to the survivor.
 
 ### How do I reassign a lead?
 
@@ -168,7 +166,7 @@ If your role has lead-assignment permission, open the lead and select **Reassign
 
 ### How do I disqualify a lead?
 
-Disqualification is not exposed on the current screens. Contact an authorized workflow owner.
+Open the lead, select **Disqualify**, choose the appropriate reason, add notes if helpful, and confirm. The lead stays in history with Disqualified status. Use **Merge duplicate** instead for a confirmed duplicate.
 
 ### Why can’t I create a quote?
 
@@ -188,7 +186,7 @@ Approved means the internal approval process is complete. Sent means that approv
 
 ### Can I print or download a quote?
 
-Use **PDF** on Quote detail if your role has access. Historical versions have separate PDFs. The Reports page itself does not have a download or print action.
+Use **PDF** on Quote detail if your role has access. Historical versions have separate PDFs. Users with sensitive-export permission can download the selected Reports tab as CSV; the page does not have a print action.
 
 ### Why can’t I create a contract?
 
@@ -204,7 +202,7 @@ The current screen has no Retry button. Contact the CRM/integration administrato
 
 ### Where are my notifications?
 
-There is no separate notification-inbox page yet. The bell opens Tasks. Also monitor Dashboard, contract details, and Renewals report.
+Select the bell in the top bar. It shows recent notifications and an unread count. Select an item to mark it read and open its related page when available. Also monitor Dashboard, Tasks, contract details, and Renewals report.
 
 ### Why do my Dashboard or Report totals differ from another user’s?
 
@@ -212,7 +210,7 @@ You may have different ownership, branch, region, or organization scope. The tot
 
 ### Does Lead export use my current filters?
 
-No. The current export downloads leads visible to your access scope rather than only the current on-screen search/status filter, up to the export limit. Handle the file as confidential.
+Yes. It applies your current Lead inbox filters within your permitted record scope, up to the export limit. Review those filters before downloading and handle the file as confidential.
 
 ### Can I edit a contact or service location after saving?
 
@@ -226,9 +224,9 @@ Read the message in the confirmation dialog. The record may have been changed by
 
 The current screen schedules the survey only. It does not yet provide completion, findings, checklist, or photo controls. Follow the approved interim process.
 
-### I requested a password reset. What happens next?
+### I forgot my password. What should I do?
 
-Follow administrator-provided instructions. The application accepts reset requests, but a normal end-user new-password page is not currently available.
+Contact your administrator or reporting manager. The Forgot password link is intentionally hidden from the sign-in screen.
 
 ## Troubleshooting by symptom
 
@@ -237,9 +235,8 @@ Follow administrator-provided instructions. The application accepts reset reques
 1. Re-enter the email carefully.
 2. Check Caps Lock.
 3. Confirm the correct CRM address.
-4. Use Forgot your password? once if appropriate.
-5. Ask whether the account is active.
-6. Contact the administrator if attempts are being rate-limited.
+4. Ask whether the account is active.
+5. Contact the administrator if attempts are being rate-limited or you need password help.
 
 Never send your password in email or chat.
 
@@ -303,17 +300,13 @@ Do not include your password, session information, full exported files, or custo
 
 The current application does not yet provide user-facing controls for:
 
-- lead disqualification or merge;
-- standalone opportunity creation;
-- general task creation;
 - requirement editing after creation;
 - site-survey completion, findings, or photo upload;
 - quote revision, withdrawal, or resubmission;
 - handover accept/reject or manual retry;
-- a separate notification inbox;
-- normal password-reset completion;
-- report export/print/date filters; or
-- general attachment management.
+- self-service password recovery;
+- report print/date filters; or
+- an organization-wide attachment center.
 
 These are documented so users do not spend time looking for controls that are not present. Follow the approved interim process or contact the appropriate administrator/process owner.
 

@@ -10,7 +10,7 @@ An account can have more than one opportunity. For example, an existing security
 
 Use an opportunity after a lead has been qualified and converted. It provides the commercial workspace for requirements, surveys, quotes, stage progress, and eventually a contract.
 
-The current application creates opportunities through **Convert lead**. There is no separate **New opportunity** button on the Pipeline or Account page.
+Create an opportunity by converting a qualified lead or by opening an existing account and selecting **New opportunity**. Use the account route when a customer has a fresh service or site request that is separate from an earlier deal.
 
 ## Pipeline page
 
@@ -49,7 +49,7 @@ Open an opportunity to review:
 - quotes; and
 - stage-change history.
 
-Buttons available according to status and permission include **Edit**, **Change stage**, **Archive**, and an **Add** menu for Requirement, Site survey, Quote, or Contract. Contract creation is shown only after the opportunity is Won. Each Add-menu item is shown only when the user has the matching requirement, survey, quote, or contract permission.
+Buttons available according to status and permission include **Edit**, **Change stage**, **Log activity**, **New task**, **Archive**, and an **Add** menu for Requirement, Site survey, Quote, or Contract. Contract creation is shown only after the opportunity is Won. The page also shows activities, linked tasks, and documents. Each Add-menu item is shown only when the user has the matching permission.
 
 ## Editing an opportunity
 
@@ -134,9 +134,7 @@ Avoid vague text such as “not interested” if more accurate information is kn
 | Activity       | Records something that already happened | “Called customer; staffing details received.” |
 | Task/follow-up | Records work that still needs to happen | “Prepare initial staffing plan by Friday.”    |
 
-Lead pages provide **Log activity**, and account pages provide **Record account review**. Activities remain as history. Tasks remain open until completed or cancelled.
-
-The current opportunity page focuses on requirements, quotes, and stage history; it does not display a full opportunity-activity timeline.
+Lead, account, and opportunity pages provide **Log activity**. Choose the activity type, actual date and time, subject, notes, and outcome. The entry remains in the related record's timeline. An account review can also be recorded on an account. Tasks remain open until completed or cancelled.
 
 ## Tasks page
 
@@ -201,9 +199,11 @@ Completed tasks leave the Open view. Select **Completed** to review the completi
 
 Use **Cancel** when the task is no longer required, not when it is merely late. Review the confirmation message and select **Cancel task** to continue, or **Go back** to keep it open. A cancelled task leaves the Open view but remains available under Cancelled and All.
 
-## How tasks are created
+## Creating a task
 
-The lead-conversion workflow creates a follow-up task from the next action. Other workflows and reminders may also create tasks. The current Tasks page does not have a general **New task** button.
+Select **New task** on Tasks or from a lead, account, or opportunity. Enter a clear title, an optional description, an assignee, priority, and due date/time. From Tasks, you can also choose a visible linked record; from a detail page, the current record is preselected. Sales executives can assign to themselves; managers can select eligible users in their managed scope. The assignee receives an in-app notification and the due time schedules a reminder.
+
+Lead conversion also creates its first follow-up task from the opportunity's next action. When that action is done, record the outcome and create the next task if more work is needed.
 
 ## Real-world example
 

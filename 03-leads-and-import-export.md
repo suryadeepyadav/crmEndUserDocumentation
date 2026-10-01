@@ -28,7 +28,12 @@ An overdue response time is highlighted so it can be handled first.
 
 - Enter text in **Search leads** and press Enter.
 - Select a **Status** to limit the list.
+- Filter by **Source**, requested **Service**, **Branch**, or **Owner** (when your role can see user choices).
+- Use **Created from** and **Created to** for a received-date range.
 - Select **Response overdue** to show leads whose first-response target has passed.
+- Select **Not yet contacted** to find New or Assigned leads without a recorded first customer contact.
+- Select **Possible duplicates** to review leads that match another lead you are allowed to see by company, email, or phone. Review both records before merging.
+- Select **Clear filters** to return to the full visible list.
 - Select **Refresh** to reload the latest results.
 
 Lead inbox displays 25 records per page. Use the page controls to move through the result set. The current table does not provide clickable column sorting.
@@ -92,7 +97,7 @@ An administrator can add sources or assignment rules, so your organization’s l
 | Disqualified | The enquiry will not proceed as a sales lead, for a recorded business reason.   |
 | Duplicate    | The record has been identified as another copy of an existing lead.             |
 
-Manual creation normally assigns the lead immediately. Website assignment is determined by trusted assignment rules. After a Call, Email, or Meeting changes the lead to **Contacted**, an authorized user can select **Mark as qualified** on the lead detail page. Disqualification and merging duplicates are not yet exposed on the current screens; contact an authorized workflow owner when either action is needed.
+Manual creation normally assigns the lead immediately. Website assignment is determined by trusted assignment rules. After a Call, Email, or Meeting changes the lead to **Contacted**, an authorized user can select **Mark as qualified** on the lead detail page. Authorized users can also disqualify an unsuitable lead or merge a confirmed duplicate from its detail page.
 
 ## Lead detail page
 
@@ -106,7 +111,8 @@ Open a row in Lead inbox to see:
 - original enquiry notes;
 - activity timeline;
 - follow-up tasks; and
-- possible duplicate leads.
+- possible duplicate leads; and
+- attached documents when your role has file access.
 
 Converted, disqualified, and duplicate leads are retained as history and cannot be converted again.
 
@@ -221,7 +227,11 @@ Before continuing:
 3. Confirm whether it is the same enquiry, a related contact, or a different organization.
 4. Avoid converting both copies.
 
-The current screen shows duplicate suggestions but does not provide a merge button. Ask the process owner to resolve confirmed duplicates.
+If the two records describe the same enquiry, select **Merge duplicate** on the record that should be closed. Choose the surviving lead, enter a reason, and confirm. The CRM marks the current record **Duplicate** and moves its activities, tasks, and requested services to the surviving lead. Review the chosen survivor carefully: a merge changes linked history and should not be used for different enquiries from the same company.
+
+## Disqualifying a lead
+
+Use **Disqualify** when the enquiry should not continue as a sales lead, such as a request outside HHCIL's services or a prospect that is not qualified. Select a configured reason, add helpful notes, and confirm. The lead remains in history with **Disqualified** status. Use **Merge duplicate** for a confirmed duplicate instead of disqualifying it. A converted, disqualified, or duplicate lead cannot be disqualified again.
 
 ## Converting a lead
 
@@ -273,8 +283,8 @@ Convert only after the lead status is **Qualified** and after confirming that:
 
 - Conversion is not the same as winning a deal.
 - The initial amount may be updated as requirements and pricing become clearer.
-- The next action creates work that can appear in Tasks.
-- There is no separate current screen for creating a standalone opportunity; lead conversion is the normal user workflow.
+- The next action creates a task and due-time reminder that can appear in Tasks and notifications.
+- A new opportunity for an existing customer can also be created from that customer's Account page.
 
 ## Importing leads from CSV
 
@@ -313,14 +323,14 @@ The stable keys are administration values, not necessarily the displayed names. 
 ### Import workflow
 
 1. In Lead inbox, select **Import CSV**.
-2. Choose the prepared file.
+2. Download the template if you need the current column names and sample master keys, then choose the prepared file.
 3. Review the preview summary:
    - total rows;
    - valid rows;
    - possible duplicates; and
    - invalid rows.
 4. Review the displayed preview rows and error messages.
-5. Correct the source file if required and preview it again.
+5. Select **Download issue report** to keep the invalid-row and possible-duplicate details, then correct the source file if required and preview it again.
 6. Import the valid rows.
 
 The preview shows the first 20 rows for review. The current screen imports only rows classified as **valid**. Possible duplicates and invalid rows are not imported. Imported leads are assigned to the signed-in user, and the user must be allowed to work with the selected branch.
@@ -337,7 +347,7 @@ Do not guess stable keys. An unknown service or branch key causes row validation
 
 Users with the restricted export permission can select **Export** from Lead inbox. The CRM downloads a CSV of leads the user is allowed to see, up to the export limit of 10,000 records. The action is recorded for audit purposes.
 
-Important: the current Export action exports all leads visible to your access scope; it does not apply the search and status filters currently shown on the page. Treat exported data as confidential and store or share it only according to HHCIL policy.
+Export applies the current Lead inbox filters within your permitted record scope. Review the filters before downloading and treat the file as confidential. The export has a 10,000-record limit.
 
 ## Related features
 

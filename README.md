@@ -108,15 +108,15 @@ Not every deal needs every middle step. For example, a survey is normally used w
 
 This guide describes only user-facing behavior that currently exists. In the present application:
 
-- opportunities are created by converting a lead; there is no separate **New opportunity** form;
-- lead merge and disqualification are supported by the wider system but do not yet have buttons on the current screens;
+- opportunities are normally created by converting a qualified lead, and authorized users can also create one from an existing Account;
+- authorized users can disqualify a lead with a reason or merge a duplicate from Lead detail;
 - authorized users can archive leads, accounts, contacts, locations, and eligible opportunities, but there is no restore screen or permanent-delete action;
 - site surveys can be scheduled, but there is not yet a screen for completing the checklist or uploading survey findings;
-- tasks can be edited, cancelled, and completed, but there is no general **New task** button;
+- tasks can be created from Tasks or from a lead, account, or opportunity, then edited, cancelled, and completed;
 - quote revisions and resubmission after rejection do not yet have a user-facing button;
 - handover acknowledgement and manual retry do not yet have user-facing controls;
-- the bell icon opens Tasks; there is not yet a separate notification inbox; and
-- password-reset requests can be submitted, but there is not yet a normal end-user page for choosing a new password from the reset link.
+- the bell icon opens a notification menu, where an item can be marked read and opened; and
+- self-service password recovery is intentionally not available from the sign-in screen. Contact an administrator if access must be restored.
 
 Where one of these cases affects your work, contact your CRM administrator or process owner.
 

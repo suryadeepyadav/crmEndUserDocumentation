@@ -20,13 +20,13 @@ The Dashboard is a work-prioritization tool. Use the underlying Lead inbox, Task
 
 ### New leads
 
-**Meaning:** Leads currently in the **New** status within your visibility scope.
+**Meaning:** Leads in the early **New** or **Assigned** state that do not yet have a first customer contact recorded within your visibility scope.
 
 **Why it matters:** New enquiries should be reviewed and contacted promptly.
 
-**How to use it:** Select the statistic to open Lead inbox filtered to new leads. Open each lead, verify its information, and log the first contact.
+**How to use it:** Select the statistic to open Lead inbox filtered to **Not yet contacted** leads. Open each lead, verify its information, and log the first customer contact.
 
-**Example:** If the card shows 4, four visible leads have not yet progressed beyond New.
+**Example:** If the card shows 4, four visible leads still need their first recorded customer contact, even if they have already been assigned to an owner.
 
 ### Response overdue
 

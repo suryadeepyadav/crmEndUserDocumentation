@@ -131,7 +131,7 @@ The CRM can create internal notifications for events such as:
 - task assignment or due time; and
 - contract renewal timing.
 
-The current application does not have a separate notification-inbox page. The top-bar bell opens **Tasks**. Users should monitor:
+Select the top-bar bell to see recent notifications and the unread count. Select a notification to mark it read and open its related page when a link is available. Users should also monitor:
 
 - Dashboard statistics;
 - Tasks filters;
@@ -143,11 +143,18 @@ Notifications support work management but do not replace agreed customer commitm
 
 ## File uploads
 
+### Documents on lead, account, and opportunity pages
+
+Open the **Documents** panel on a permitted lead, account, or opportunity. Choose a file, select its document category (Internal, Commercial, or Contract), then select **Upload**. The panel shows existing files, upload time, and scan status. Use the download icon when a file is available and your role permits downloads. The category describes the file; it does not itself grant access.
+
+Accepted in the Documents panel:
+
+- PDF, JPEG/JPG, PNG, DOCX, or XLSX;
+- maximum 10 MB.
+
 ### Signed contract agreement
 
-The current user-facing upload is the signed agreement used to activate a Draft contract.
-
-Accepted on the current screen:
+The contract page also accepts a signed agreement to activate a Draft contract. Accepted there:
 
 - PDF
 - JPEG/JPG
@@ -166,7 +173,7 @@ The production system may apply further file-security scanning. If a file is rej
 
 ### Current file limitations
 
-Although the wider CRM records can reference attachments, the current user interface does not provide a general attachment center or general attachment-download list. Site-survey photo upload is also not currently available on a screen.
+The Documents panel is attached to individual lead, account, and opportunity pages; there is no organization-wide file center. Site-survey photo upload is not currently available on a screen.
 
 ## Downloads and exports
 
@@ -176,11 +183,11 @@ Available from Quote detail according to permission. Historical quote versions c
 
 ### Lead CSV export
 
-Available only with the sensitive export permission. It downloads visible leads and records the export for audit. The current export does not use the on-screen Lead inbox filters and can include all records within your access scope, up to the export limit.
+Available only with the sensitive export permission. It downloads leads matching the on-screen Lead inbox filters within your visible record scope, up to the export limit, and records the export for audit.
 
 ### Report export and printing
 
-The Reports page currently has no export or print control.
+Users with sensitive-export permission can download the selected Reports tab as CSV using **Export current report**. The export is audited. The Reports page has no print control.
 
 ## Data handling responsibilities
 
@@ -195,6 +202,7 @@ The Reports page currently has no export or print control.
 
 - Sign out on shared computers.
 - Do not share browser sessions.
+- Use **Manage signed-in sessions** in the profile area to review or revoke a session you no longer trust. Revoking the current session signs you out immediately.
 - An administrator can deactivate a user and immediately revoke access.
 - If you believe your account is being used by someone else, sign out and contact the administrator immediately.
 
