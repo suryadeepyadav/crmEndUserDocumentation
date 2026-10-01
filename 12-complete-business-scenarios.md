@@ -32,9 +32,11 @@ After speaking with Kavita, the salesperson logs a **Call**:
 
 The first-contact time is recorded and the lead becomes Contacted.
 
-### Step 3: Check duplicates and convert
+### Step 3: Check duplicates, qualify, and convert
 
-The salesperson reviews possible duplicates. Finding none, they select **Convert lead** and enter:
+The salesperson reviews possible duplicates. Finding none, they select **Mark as qualified** and
+confirm that the enquiry is ready to progress. The lead status becomes Qualified. They then select
+**Convert lead** and enter:
 
 - Legal account name: Northstar Textiles Private Limited
 - Trade name: Northstar Textiles

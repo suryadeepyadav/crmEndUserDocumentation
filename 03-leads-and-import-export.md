@@ -92,7 +92,7 @@ An administrator can add sources or assignment rules, so your organization’s l
 | Disqualified | The enquiry will not proceed as a sales lead, for a recorded business reason.   |
 | Duplicate    | The record has been identified as another copy of an existing lead.             |
 
-Manual creation normally assigns the lead immediately. Website assignment is determined by trusted assignment rules. Authorized managers can reassign a lead from its detail page. Disqualification and merging duplicates are not yet exposed on the current screens; contact an authorized workflow owner when either action is needed.
+Manual creation normally assigns the lead immediately. Website assignment is determined by trusted assignment rules. After a Call, Email, or Meeting changes the lead to **Contacted**, an authorized user can select **Mark as qualified** on the lead detail page. Disqualification and merging duplicates are not yet exposed on the current screens; contact an authorized workflow owner when either action is needed.
 
 ## Lead detail page
 
@@ -188,6 +188,28 @@ The first saved Call, Email, or Meeting records the first-contact time and moves
 - Notes: “Customer needs housekeeping at two plants and will share current staffing details.”
 - Outcome: “Requirement meeting agreed for 3 October at 11:00.”
 
+## Marking a lead as qualified
+
+### What it means
+
+**Qualified** means the initial customer conversation shows that the enquiry is genuine and worth managing as a sales opportunity. It is the required step between **Contacted** and **Converted**.
+
+### When to use it
+
+Use **Mark as qualified** after recording a Call, Email, or Meeting and confirming the basic fit, such as the requested service, location or timing, relevant decision-maker/contact, and a realistic next step. Do not qualify a lead simply because it has an email address or because the first response deadline is close.
+
+### How to mark it qualified
+
+1. Open the contacted lead.
+2. Review the activity timeline and any possible duplicates.
+3. Select **Mark as qualified**.
+4. Read the confirmation message and select **Mark as qualified** again.
+5. Confirm that the status chip now shows **Qualified**. The **Convert lead** action becomes available if your role has conversion permission.
+
+Example: after Kavita confirms that Northstar Textiles needs housekeeping at two plants and agrees to provide site details, the salesperson records the call and marks the lead qualified. The salesperson can now create the account and opportunity without treating the deal as won.
+
+If **Mark as qualified** is missing, first record a Call, Email, or Meeting. The action is also hidden if your role does not have permission to update leads or you cannot access that lead.
+
 ## Possible duplicates
 
 The detail page can show other records that resemble the lead. Suggestions may be based on identifying information such as company, email, or phone.
@@ -217,7 +239,7 @@ If any part cannot be created, the whole conversion is cancelled so that partial
 
 ### When to convert
 
-Convert after confirming that:
+Convert only after the lead status is **Qualified** and after confirming that:
 
 - the organization and contact are genuine;
 - the requested service is relevant to HHCIL;
@@ -229,10 +251,11 @@ Convert after confirming that:
 1. Open an eligible lead.
 2. Review duplicate suggestions.
 3. Record the customer contact and qualification notes.
-4. Select **Convert lead**.
-5. Complete the conversion fields.
-6. Confirm conversion.
-7. The CRM opens the new opportunity.
+4. Select **Mark as qualified** and confirm the action.
+5. Select **Convert lead**.
+6. Complete the conversion fields.
+7. Confirm conversion.
+8. The CRM opens the new opportunity.
 
 | Field               | What to enter                                                                                 | Required? |
 | ------------------- | --------------------------------------------------------------------------------------------- | --------: |
@@ -335,7 +358,10 @@ It may be outside your assigned scope or inactive. Ask the administrator to chec
 Record a Call, Email, or Meeting activity.
 
 **Convert lead is missing.**  
-The lead may already be converted, disqualified, or marked duplicate, or your role may not have conversion permission.
+First confirm that the lead status is **Qualified**. If it is still Assigned or Contacted, record the customer contact when needed and select **Mark as qualified**. The action is also hidden for converted, disqualified, or duplicate leads and for users without conversion permission.
+
+**Mark as qualified is missing.**  
+Record a Call, Email, or Meeting first so that the status becomes **Contacted**. If the lead is already qualified or is no longer active, the action is not shown. Your role also needs lead-update permission.
 
 **Edit or Archive is missing.**  
 Your role may not have lead-update permission, or the record may be outside your ownership, branch, or regional scope.

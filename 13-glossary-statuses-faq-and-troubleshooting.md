@@ -136,7 +136,15 @@ Use the correct business status whenever one applies, such as Lost, Cancelled, D
 
 ### How do I create a new opportunity?
 
-Convert a qualified lead. The current application does not have a standalone New Opportunity form.
+First record a Call, Email, or Meeting against the lead, then select **Mark as qualified**. Once
+the lead shows Qualified, select **Convert lead**. The current application does not have a
+standalone New Opportunity form.
+
+### Why canâ€™t I mark a lead as qualified?
+
+Only a Contacted lead can be qualified. Record a customer Call, Email, or Meeting first, then
+return to the lead detail page. The button is also hidden if you do not have lead-update permission
+or cannot access the lead.
 
 ### How do I create a task?
 

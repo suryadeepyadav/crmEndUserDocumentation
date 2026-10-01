@@ -83,7 +83,7 @@ Lead is assigned and given a response target
    ↓
 Salesperson records contact and follow-up
    ↓
-Lead is qualified and converted
+Lead is marked qualified, then converted
    ↓
 Account + Contact + Opportunity + Follow-up are created together
    ↓
