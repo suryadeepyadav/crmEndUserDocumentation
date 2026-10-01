@@ -109,7 +109,7 @@ Not every deal needs every middle step. For example, a survey is normally used w
 This guide describes only user-facing behavior that currently exists. In the present application:
 
 - opportunities are created by converting a lead; there is no separate **New opportunity** form;
-- lead reassignment, merge, and disqualification are supported by the wider system but do not yet have buttons on the current screens;
+- lead merge and disqualification are supported by the wider system but do not yet have buttons on the current screens;
 - authorized users can archive leads, accounts, contacts, locations, and eligible opportunities, but there is no restore screen or permanent-delete action;
 - site surveys can be scheduled, but there is not yet a screen for completing the checklist or uploading survey findings;
 - tasks can be edited, cancelled, and completed, but there is no general **New task** button;

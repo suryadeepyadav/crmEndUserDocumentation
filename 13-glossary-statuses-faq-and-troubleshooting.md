@@ -154,9 +154,13 @@ Only an appropriate customer-contact activity, such as Call, Email, or Meeting, 
 
 The detail page shows suggestions, but the current screen has no Merge button. Do not convert both copies. Contact the authorized process owner.
 
-### How do I reassign or disqualify a lead?
+### How do I reassign a lead?
 
-These actions are not exposed on the current screens. Contact an authorized administrator or workflow owner.
+If your role has lead-assignment permission, open the lead and select **Reassign lead**. Choose an allowed branch, an active user belonging to that branch, a response deadline, and a clear reason. If the button is missing, ask a Branch Manager, Regional Manager, Sales Head, or System Administrator to perform the reassignment.
+
+### How do I disqualify a lead?
+
+Disqualification is not exposed on the current screens. Contact an authorized workflow owner.
 
 ### Why can’t I create a quote?
 
@@ -291,7 +295,7 @@ Do not include your password, session information, full exported files, or custo
 
 The current application does not yet provide user-facing controls for:
 
-- lead reassignment, disqualification, or merge;
+- lead disqualification or merge;
 - standalone opportunity creation;
 - general task creation;
 - requirement editing after creation;

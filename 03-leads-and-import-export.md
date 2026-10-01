@@ -92,7 +92,7 @@ An administrator can add sources or assignment rules, so your organization’s l
 | Disqualified | The enquiry will not proceed as a sales lead, for a recorded business reason.   |
 | Duplicate    | The record has been identified as another copy of an existing lead.             |
 
-Manual creation normally assigns the lead immediately. Website assignment is determined by trusted assignment rules. In the current screens there are no buttons for reassignment, disqualification, or merging duplicates. If one of these actions is needed, contact an authorized administrator or workflow owner.
+Manual creation normally assigns the lead immediately. Website assignment is determined by trusted assignment rules. Authorized managers can reassign a lead from its detail page. Disqualification and merging duplicates are not yet exposed on the current screens; contact an authorized workflow owner when either action is needed.
 
 ## Lead detail page
 
@@ -100,6 +100,7 @@ Open a row in Lead inbox to see:
 
 - organization and contact details;
 - phone and city;
+- current owner and responsible branch;
 - response due time and first-contact time;
 - interested services;
 - original enquiry notes;
@@ -124,7 +125,24 @@ Users with lead-update permission can select **Edit** on the lead detail page. U
 | Services             | One or more services currently requested                                    |
 | Enquiry notes        | Useful updated context about need, scale, timing, or constraints            |
 
-Editing does not change the lead's branch or owner. Assignment is a separate controlled action and is not exposed on the current screen. Saving uses the latest version of the lead; if another user changed it first, refresh and review the newer information before trying again.
+Editing does not change the lead's branch or owner. Assignment is a separate controlled action described below. Saving uses the latest version of the lead; if another user changed it first, refresh and review the newer information before trying again.
+
+## Assigning or reassigning a lead
+
+Users with lead-assignment permission can select **Assign lead** or **Reassign lead** on the lead detail page. Standard Branch Manager, Regional Manager, Sales Head, and System Administrator roles have this permission; a Sales Executive does not normally have it.
+
+1. Open the lead and select **Reassign lead**.
+2. Select the responsible **Branch**. Only branches within your permitted scope are available.
+3. Select **Assign to**. The list contains active users whose primary branch matches the selected branch and shows their role and email for identification.
+4. Set the **Response deadline** in your configured local timezone.
+5. Enter an **Assignment reason** explaining why ownership is changing.
+6. Select **Reassign lead** to save.
+
+The CRM updates the owner, branch, and response deadline together. It records assignment history and an audit event, and creates an in-app notification for the new owner. The previous owner may immediately lose access when they are no longer the owner and do not otherwise have branch-level visibility.
+
+Example: a Branch Manager reassigns an Ahmedabad security-services enquiry from one Sales Executive to another because the original owner is on leave. The manager keeps the Ahmedabad branch, chooses the replacement executive, sets a new response deadline, and records “Covering Ahmedabad enquiries during approved leave.”
+
+If the required user is not listed, confirm that the user is active and that their **Primary branch** matches the selected branch. Do not change a user's branch merely to bypass record-visibility rules.
 
 ## Archiving a lead
 
