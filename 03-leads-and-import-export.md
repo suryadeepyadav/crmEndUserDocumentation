@@ -26,7 +26,8 @@ An overdue response time is highlighted so it can be handled first.
 
 ### Search and filters
 
-- Enter text in **Search leads** and press Enter.
+- The **Search and filter leads** section starts closed so the lead list has more room. Select its header to open it. If filters are already applied, the header shows how many are active even while closed.
+- Enter text in **Search leads** and press Enter or select **Search leads**. Use the clear icon in the search field to remove the text search.
 - Select a **Status** to limit the list.
 - Filter by **Source**, requested **Service**, **Branch**, or **Owner** (when your role can see user choices).
 - Use **Created from** and **Created to** for a received-date range.
@@ -35,6 +36,7 @@ An overdue response time is highlighted so it can be handled first.
 - Select **Possible duplicates** to review leads that match another lead you are allowed to see by company, email, or phone. Review both records before merging.
 - Select **Clear filters** to return to the full visible list.
 - Select **Refresh** to reload the latest results.
+- Select the section header again to close the controls without removing your applied filters.
 
 Lead inbox displays 25 records per page. Use the page controls to move through the result set. The current table does not provide clickable column sorting.
 

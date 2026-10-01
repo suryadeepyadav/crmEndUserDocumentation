@@ -118,11 +118,11 @@ Enter the requested text and press **Enter** when the field instructs you to do 
 - Accounts searches legal name, trade name, and GSTIN.
 - Pipeline searches opportunity information.
 
-Clear the text and press Enter or select **Refresh** to return to the unfiltered list.
+In Lead inbox, open **Search and filter leads**, then enter text and press Enter or select **Search leads**. Use the search field's clear icon or **Clear filters** to return to the unfiltered list. **Refresh** reloads the current filtered results; it does not remove filters.
 
 ### Filters
 
-Filters narrow the list without changing any record. Lead inbox includes status, source, requested service, branch, owner (when permitted), received-date range, response-overdue, **Not yet contacted**, and **Possible duplicates** filters. Tasks includes Open, Completed, Cancelled, and All status views. Open tasks can also be filtered by All open, Today, Overdue, and Upcoming.
+Filters narrow the list without changing any record. Lead inbox keeps its **Search and filter leads** section closed by default; open it to choose status, source, requested service, branch, owner (when permitted), received-date range, response-overdue, **Not yet contacted**, or **Possible duplicates** filters. The closed section shows the number of active filters. Tasks includes Open, Completed, Cancelled, and All status views. Open tasks can also be filtered by All open, Today, Overdue, and Upcoming.
 
 ### Refresh
 
