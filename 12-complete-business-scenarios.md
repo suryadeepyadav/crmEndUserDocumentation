@@ -71,7 +71,7 @@ After checking every value, they select **Freeze & approve**.
 
 ### Step 6: Schedule the site survey
 
-The salesperson adds a Site survey for Pune Plant 1 with visit time and preparation notes. The current application records the schedule; the team follows the interim approved process for survey findings because completion/photo screens are not yet available.
+The salesperson adds a Site survey for Pune Plant 1, chooses the eligible colleague who will visit, and enters the visit time and preparation notes. After the visit, that colleague selects **Complete**, records each checklist result and the findings, and adds supporting files from the survey's **Documents** control when permitted. If a measurement or safety item needs action, they select **Follow-up** and create the linked opportunity task with a clear owner and due time.
 
 ### Step 7: Create and approve the quote
 
@@ -177,7 +177,7 @@ The quote includes mobilization inside a recurring line, but policy requires it 
 3. They enter: “Separate mobilization as a one-time line and confirm 30-day validity.”
 4. The decision is retained in approval history.
 5. The salesperson does not send the current version.
-6. Because the current user interface does not provide New version or Resubmit controls, the salesperson contacts the authorized commercial process owner to arrange the controlled revision.
+6. The salesperson opens the current quote and selects **New version**. They separate the mobilization line, save the new Draft version, and submit it for approval.
 7. The corrected version must complete required approval before it is sent.
 
 ## Scenario 6 — Contract amendment and renewal planning

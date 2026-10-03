@@ -10,10 +10,12 @@ Every report is permission- and scope-aware. A salesperson, branch manager, regi
 
 Select **Reports** from navigation. If the item is missing, your role does not currently have report access.
 
-The current report page provides five tabs:
+The current report page provides seven tabs:
 
 - Pipeline
 - Lead cohorts
+- Activities
+- Proposal turnaround
 - Performance
 - Renewals
 - Account expansion
@@ -72,6 +74,14 @@ Use it to compare intake quality, conversion, and response speed across months. 
 ### Important first-response rule
 
 The first Call, Email, or Meeting records customer contact. Internal notes do not count. Accurate activity types are therefore essential to this report.
+
+## Activities report
+
+The Activities tab shows each visible task owner's Open, Overdue, and Completed task counts, plus totals by recorded activity type. Use it to spot follow-up backlogs and understand which customer interactions are being recorded. Overdue means an open task's due time has passed; a completed task remains in the completed count. Keep task outcomes and activity types accurate so the numbers are meaningful.
+
+## Proposal turnaround report
+
+This tab lists opportunities with submitted quote versions. **Submitted versions** counts versions sent for approval; **Average turnaround** measures the time from creating a quote version to submitting that version. It does not measure how long an approver took or when the customer received the PDF. Use it to identify drafts that need clearer scope or faster preparation.
 
 ## Performance report
 
@@ -132,10 +142,11 @@ Use it to identify customers with active expansion potential, accounts with only
 1. Review Dashboard for immediate work.
 2. Use Pipeline report for stage and owner balance.
 3. Use Lead cohorts for response and conversion trends.
-4. Use Performance for branch/region and won/lost review.
-5. Use Renewals to plan account actions.
-6. Use Account expansion to identify cross-service opportunities.
-7. Open the underlying account, opportunity, or contract before acting on an unusual number.
+4. Use Activities and Proposal turnaround for follow-up and quote-preparation delays.
+5. Use Performance for branch/region and won/lost review.
+6. Use Renewals to plan account actions.
+7. Use Account expansion to identify cross-service opportunities.
+8. Open the underlying account, opportunity, or contract before acting on an unusual number.
 
 ## Data-quality responsibilities
 

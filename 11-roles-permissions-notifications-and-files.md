@@ -31,10 +31,10 @@ The descriptions below explain the intended end-user purpose of the current stan
 - edit or archive eligible leads, accounts, contacts, locations, and opportunities within scope;
 - record activities and manage tasks;
 - create requirements and surveys;
-- create quotes and access permitted PDFs;
+- create quotes and review permitted quote status and approval history; and
 - review permitted reports.
 
-**Typical restrictions:** No organization-wide lead assignment, sensitive lead export, commercial approval, contract administration, or CRM administration.
+**Typical restrictions:** No organization-wide lead assignment, sensitive lead export, commercial approval, contract administration, CRM administration, or protected quote-rate access unless an additional role grants it. Quote PDF download also requires protected-rate access.
 
 ### Branch Manager
 
@@ -60,7 +60,7 @@ The descriptions below explain the intended end-user purpose of the current stan
 
 **Purpose:** Review controlled quote versions and commercial terms.
 
-**Typical work:** Open Approvals, inspect quotes and rates, download PDFs, approve, request changes, or reject with comments.
+**Typical work:** Open approval work for the approver's assigned branch and current policy step, inspect permitted quotes and rates, download PDFs when permitted, approve, request changes, or reject with comments.
 
 This role should make decisions only within approved authority and policy.
 
@@ -74,9 +74,7 @@ This role should make decisions only within approved authority and policy.
 
 **Purpose:** Support post-sale handover and operational receipt.
 
-**Typical work:** Handover acknowledgement and relevant attachments where a user-facing workflow is available.
-
-**Current interface note:** The present application does not yet expose handover accept/reject controls, and the standard navigation prerequisites may not show Contracts to an Operations Liaison alone. The administrator may need to provide an additional appropriate role or use the interim operational process.
+**Typical work:** Open **Handovers**, review the permitted operations queue, accept a Pending or Sent package, optionally add its external reference, or reject it with a clear reason. Contract links require the separate account-read permission; the handover list itself is available with handover acknowledgement access.
 
 ## Multiple roles
 
@@ -109,6 +107,8 @@ Certain senior or administrative roles can access all relevant organization reco
 ### Example
 
 A salesperson in Pune may create and manage their own Pune leads. A Pune Branch Manager may see team records for Pune. A Regional Manager may see several branches in the West region. None should see an unrelated branch merely because they know a record link.
+
+Commercial approval has an additional boundary: an approver sees a pending quote only when the quote is in an allowed branch and the approver's role is the role currently required by that quote's approval policy. A direct quote link does not bypass this boundary.
 
 ## What to do when access looks wrong
 
@@ -145,7 +145,7 @@ Notifications support work management but do not replace agreed customer commitm
 
 ### Documents on lead, account, and opportunity pages
 
-Open the **Documents** panel on a permitted lead, account, or opportunity. Choose a file, select its document category (Internal, Commercial, or Contract), then select **Upload**. The panel shows existing files, upload time, and scan status. Use the download icon when a file is available and your role permits downloads. The category describes the file; it does not itself grant access.
+Open the **Documents** panel on a permitted lead, account, or opportunity. Choose a file, select its document category (Internal, Commercial, or Contract), then select **Upload**. Users with download access see existing files, upload time, scan status, and a download icon for cleared files. A user who is allowed to upload but not download can add a file but is not shown the existing-file list. The category describes the file; it does not itself grant access.
 
 Accepted in the Documents panel:
 
@@ -171,15 +171,19 @@ Before uploading:
 
 The production system may apply further file-security scanning. If a file is rejected, verify its type and size; do not disguise an unsupported file by changing its extension.
 
+### Survey files
+
+On an opportunity, open **Documents** on a site-survey card to add or review the survey's supporting files, including photographs, when your role has the required file permissions. Keep evidence with the survey it belongs to rather than uploading it to an unrelated account or opportunity document list.
+
 ### Current file limitations
 
-The Documents panel is attached to individual lead, account, and opportunity pages; there is no organization-wide file center. Site-survey photo upload is not currently available on a screen.
+There is no organization-wide file center. Documents remain attached to the individual lead, account, opportunity, survey, or contract context where they were added.
 
 ## Downloads and exports
 
 ### Quote PDF
 
-Available from Quote detail according to permission. Historical quote versions can have their own PDFs. Treat every PDF as commercially confidential.
+Available from Quote detail only when the user has both quote-PDF download and protected commercial-rate access. Historical quote versions can have their own PDFs. Treat every PDF as commercially confidential.
 
 ### Lead CSV export
 

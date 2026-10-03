@@ -74,16 +74,15 @@ For a security requirement at a manufacturing plant:
 
 Approval creates an immutable snapshot so later quote and handover records can point to the exact information that was approved. Treat this as a business approval, not a draft-save shortcut.
 
-The current user interface does not provide a requirement-edit button after creation. Verify draft details carefully. If a saved requirement is wrong, consult the process owner before moving forward.
+Before approval, select **Edit** on the requirement card to correct its service, dates, scale, instructions, or template answers. Save the draft, review it again, and then approve it. Approved requirements cannot be edited; a new approved scope needs the organization's change process.
 
 ## Requirement gates for quotes
 
 Before a quote can be created:
 
-- the opportunity must have at least one requirement; and
-- all requirements attached to the opportunity must be approved.
+- every requirement already attached to the opportunity must be approved.
 
-If one service requirement remains draft, complete and approve it before creating the quote.
+Use a requirement whenever the scope or price needs a controlled record. If one has been added and remains Draft, complete and approve it before creating the quote. Your commercial process may require a requirement even where the screen does not prevent an otherwise valid quote from being started.
 
 ## Site surveys
 
@@ -108,17 +107,21 @@ The account must have at least one service location. If no location is available
 1. Open the opportunity.
 2. Open **Add** and select **Site survey**.
 3. Choose the **Location**.
-4. Set the **Visit date/time**.
-5. Enter **Preparation notes**.
-6. Save.
+4. Choose **Assign survey to**.
+5. Set the **Visit date/time**.
+6. Enter **Preparation notes**.
+7. Save.
 
-| Field             | Guidance                                                                               |
-| ----------------- | -------------------------------------------------------------------------------------- |
-| Location          | Exact account site to be visited; required                                             |
-| Visit date/time   | Confirmed or agreed appointment time; required                                         |
-| Preparation notes | Access rules, people to meet, documents to carry, PPE, questions, or other preparation |
+| Field             | Guidance                                                                                                          |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Location          | Exact account site to be visited; required                                                                        |
+| Assign survey to  | The eligible user responsible for the visit. The list is limited to users you are allowed to assign; required.   |
+| Visit date/time   | Confirmed or agreed appointment time; required                                                                    |
+| Preparation notes | Access rules, people to meet, documents to carry, PPE, questions, or other preparation                            |
 
-The survey is assigned to the opportunity owner. Its initial checklist is empty until a detailed survey workflow is available.
+The form initially selects the opportunity owner when that person is eligible. Change it when another eligible colleague will perform the visit. The survey card then shows the assigned person. The location must belong to the opportunity's account.
+
+Each new survey starts with a five-item checklist covering access and safety, scope, measurements or headcount, constraints, and follow-up actions.
 
 ### Example
 
@@ -126,23 +129,31 @@ The survey is assigned to the opportunity owner. Its initial checklist is empty 
 - Visit date/time: 4 October, 10:30 AM
 - Preparation notes: “Meet Kavita at Gate 2. Carry photo ID and safety shoes. Measure all common areas and confirm three-shift occupancy.”
 
-## Current site-survey limitation
+## Completing a survey and adding evidence
 
-The current application provides scheduling, but it does not yet provide an end-user screen to:
+1. On the opportunity, find the survey under **Site surveys**.
+2. Select **Complete** after the visit. Enter a result for every checklist item; use the notes field for findings and follow-up details.
+3. Save. The status changes from **Scheduled** to **Completed** and the completion time is recorded. A completed survey cannot be completed again.
+4. Select **Documents** to add or review survey photographs and supporting files, if your role has file access.
 
-- complete the survey checklist;
-- record findings;
-- upload survey photographs;
-- change survey completion status; or
-- view a dedicated survey list.
+The opportunity page is the survey list for that opportunity; there is no separate all-surveys menu. Scheduling alone does not mark a survey complete. Upload files to the correct survey, and never use a checklist result merely to hide an unresolved finding.
 
-Follow the approved interim business process for capturing findings and inform the CRM process owner. Do not assume that saving a scheduled survey marks it complete.
+### Creating follow-up work from a survey
+
+Use **Follow-up** on a survey card when the visit creates work for someone to do later, such as confirming a measurement, obtaining a safety document, or arranging a second visit.
+
+1. Select **Follow-up** on the relevant survey.
+2. The standard task form opens with a title beginning `Survey follow-up:` and the current opportunity already linked.
+3. Confirm or change the title, choose an eligible assignee, priority, and due date/time, then add useful details.
+4. Save the task.
+
+The task appears in the opportunity's **Follow-up tasks** list and follows the usual task reminder and notification process. The button is visible only to users who can manage activities and tasks. Record the survey finding in the survey itself as well; the task is the action to take afterwards.
 
 ## Related features
 
 - The opportunity determines which services can be selected.
 - Account locations provide the survey venue.
-- Approved requirements are required before quote creation.
+- Any requirements saved against the opportunity must be approved before quote creation.
 - Approved requirement snapshots later support contract handover.
 - Administrators create and version requirement templates.
 

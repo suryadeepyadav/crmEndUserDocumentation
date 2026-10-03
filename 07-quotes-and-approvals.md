@@ -14,12 +14,9 @@ A quote should not be used as a rough personal calculation. Draft it from verifi
 
 ## Before creating a quote
 
-The opportunity must have:
+Every requirement already attached to the opportunity must be in **Approved** status.
 
-- at least one requirement; and
-- every requirement in Approved status.
-
-If quote creation is refused, return to the opportunity and check for a missing or draft requirement.
+Use requirements whenever the scope or pricing needs controlled sign-off. If quote creation is refused, return to the opportunity and check for a Draft requirement or confirm that your role can create quotes.
 
 ## Creating a quote
 
@@ -84,9 +81,10 @@ Always review the displayed total before submitting. If tax treatment is uncerta
 | Draft             | Commercial offer is being prepared               | Review and submit for approval                     |
 | Pending approval  | One or more approvers must decide                | Wait for or follow up with the current approver    |
 | Approved          | All required approvals are complete              | Mark sent after issuing the approved version       |
-| Rejected          | Approver declined the version                    | Review comments and contact the process owner      |
-| Changes requested | Approver requires revision                       | Review comments and arrange a new version          |
-| Withdrawn         | Submission was withdrawn from approval           | Confirm why and whether a new submission is needed |
+| Rejected          | Approver declined the version                    | Review comments; revise or resubmit as appropriate |
+| Changes requested | Approver requires revision                       | Review comments; revise or resubmit as appropriate |
+| Withdrawn         | Submission was withdrawn from approval           | Create a revision or resubmit the unchanged version |
+| Superseded        | Historical pending version was replaced by a newer current version | Use the current version; the historical record remains read-only |
 | Sent              | Approved version has been issued to the customer | Continue follow-up and negotiation                 |
 
 Only an approved quote can be marked Sent.
@@ -97,7 +95,7 @@ The quote page shows:
 
 - current version and status;
 - validity date;
-- itemized charges and totals;
+- itemized charges and totals when your role can view protected commercial rates;
 - payment terms, assumptions, and exclusions;
 - version history;
 - approval history and comments; and
@@ -106,18 +104,21 @@ The quote page shows:
 Depending on status and permission, actions include:
 
 - **PDF** — open/download the quote document;
+- **Revise draft lines** or **New version** — prepare a new immutable commercial version from the current lines;
 - **Submit for approval** — send a draft into the approval process; and
 - **Mark sent** — record that an approved quote was issued to the customer.
+
+Some users may open a quote to review its status and approval history but see a notice that rates, discounts, taxes, and totals are restricted. This is intentional. Quote PDF download is also available only when the user has both the PDF-download permission and protected commercial-rate access. Do not ask another user to share a quote PDF or commercial values outside the approved access process.
 
 ## Submitting for approval
 
 1. Review every line, rate, discount, tax, date, and term.
-2. Open the generated PDF and confirm the customer-facing result.
+2. If your role provides PDF download, open the generated PDF and confirm the customer-facing result. Otherwise, follow the authorized commercial review process for the restricted version.
 3. Select **Submit for approval**.
 4. Review the confirmation message and select **Submit for approval** again.
 5. The status becomes Pending approval when approval steps apply.
 
-Approval rules may depend on branch, amount, discount, commercial exception, and ordered approver roles. The CRM evaluates the configured policy; users should not bypass it by changing a value without a genuine business reason.
+The current approval rules can be configured by branch, quote amount, maximum line discount, and ordered approver roles. The rule chosen when a version is submitted remains attached to that approval request, so a later policy change does not change who must decide an already-submitted version. Users should not bypass the process by changing a value without a genuine business reason.
 
 ## Approval inbox
 
@@ -126,7 +127,10 @@ Users with commercial approval access can open **Approvals**. Each pending card 
 - account and opportunity;
 - quote version;
 - submission date; and
-- amount.
+- approval policy and current step; and
+- amount, when the user is allowed to view protected rate details.
+
+The inbox is deliberately limited. A pending version appears only when it is in a branch the approver is allowed to access and the approver's current role matches the required approval step. It is normal for an approver to see an empty inbox while work for a different branch or role remains pending.
 
 ### Making a decision
 
@@ -167,13 +171,23 @@ Do not mark it Sent merely because approval completed. Sent means the customer r
 
 ## Version history and PDFs
 
-The quote page retains every version and provides a PDF for each available version. A draft PDF may carry a draft indication. Historical versions remain available so users can verify what was previously offered.
+The quote page retains every version. A draft PDF may carry a draft indication. Historical versions remain available so authorized users can verify what was previously offered.
 
 PDF and commercial-rate access can be separately restricted. If the PDF control or sensitive rates are unavailable, ask an authorized user rather than sharing another user’s download.
 
-## Current revision limitation
+Quote PDF download requires both the PDF-download permission and protected commercial-rate access. If the PDF control or sensitive rates are unavailable, ask the commercial access owner to review your role rather than sharing another user's download.
 
-The underlying workflow supports quote versions, but the current screen does not provide a **New version**, **Withdraw**, or **Resubmit** button. If an approval is rejected or changes are requested, review the permanent approval comments and contact the authorized commercial process owner to arrange the next version. Do not edit or send the rejected version outside the controlled process.
+## Revising a quote
+
+Select **Revise draft lines** on a Draft quote, or **New version** on a resolved or Sent quote. Review the copied line items, rates, discounts, taxes, validity, terms, assumptions, and exclusions. Save to create a new Draft version, then submit that version for approval. Earlier versions and their approval history remain available to authorized users.
+
+A version with **Pending approval** cannot be changed or replaced. This prevents an approver from deciding a commercial version that changed after submission. If the work must stop or change:
+
+1. The person who submitted the current version (or a System Administrator) opens **Approval history**.
+2. Select **Withdraw**, enter a clear reason, and confirm.
+3. After withdrawal, select **New version** if any commercial field must change. Create and submit the revised draft.
+
+For a current version that is **Rejected**, **Changes requested**, or **Withdrawn**, the original submitter (or a System Administrator) can instead select **Resubmit** in **Approval history** when the exact same version should go through approval again. Enter a meaningful comment. Resubmission creates a new approval request using the rules captured when that version was first submitted; it does not erase the earlier decision.
 
 ## Real-world example
 
@@ -186,7 +200,7 @@ For the Northstar opportunity:
 - Assumption: Customer provides water and electricity at service points
 - Exclusion: Specialized façade cleaning not included
 
-After all requirements are approved, the salesperson creates the quote and submits it. The commercial approver requests a clearer mobilization line. Because the current revision button is not available, the salesperson follows the approved internal process with the commercial owner before a corrected version is resubmitted.
+After all requirements are approved, the salesperson creates the quote and submits it. The commercial approver requests a clearer mobilization line. The salesperson opens **New version**, corrects the line, and submits the new draft for approval. The rejected version stays in history.
 
 ## Related features
 
@@ -199,6 +213,7 @@ After all requirements are approved, the salesperson creates the quote and submi
 ## Important notes
 
 - Rates, discounts, and PDFs are commercially sensitive.
+- A user may be able to review approval status without being allowed to see commercial totals or download the PDF.
 - Never send a Draft, Pending approval, Rejected, or Changes requested version.
 - Protected commercial changes require a new controlled version and approval.
 - Approval comments and old versions are permanent history.

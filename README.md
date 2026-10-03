@@ -39,10 +39,10 @@ If a page or button in this guide is not visible to you, your account probably d
 - Opportunity pipeline in table and Kanban views, including editing, stage changes, and safe archiving
 - Activities, follow-up tasks, priorities, and due dates
 - Service requirement forms and approved requirement snapshots
-- Site-survey scheduling
-- Versioned quotes, calculated totals, approval steps, and PDF downloads
-- Contracts, signed-agreement upload, amendments, renewals, and handovers
-- Pipeline, conversion, performance, renewal, and account-expansion reports
+- Site-survey scheduling, assignee selection, completion, follow-up tasks, and evidence files
+- Versioned quotes, calculated totals, approval steps, and permission-controlled PDF downloads
+- Contracts, signed-agreement upload, amendments, renewals, and operations handovers
+- Pipeline, conversion, activity, proposal-turnaround, performance, renewal, and account-expansion reports
 - Administration for users, roles, branches, regions, services, templates, and workflow rules
 
 ## Recommended starting point
@@ -111,10 +111,11 @@ This guide describes only user-facing behavior that currently exists. In the pre
 - opportunities are normally created by converting a qualified lead, and authorized users can also create one from an existing Account;
 - authorized users can disqualify a lead with a reason or merge a duplicate from Lead detail;
 - authorized users can archive leads, accounts, contacts, locations, and eligible opportunities, but there is no restore screen or permanent-delete action;
-- site surveys can be scheduled, but there is not yet a screen for completing the checklist or uploading survey findings;
+- site surveys can be scheduled for an eligible user, completed with checklist findings, given supporting files, and used to create a linked opportunity follow-up task;
 - tasks can be created from Tasks or from a lead, account, or opportunity, then edited, cancelled, and completed;
-- quote revisions and resubmission after rejection do not yet have a user-facing button;
-- handover acknowledgement and manual retry do not yet have user-facing controls;
+- a current quote submission can be withdrawn by its submitter (or a System Administrator), and a rejected, changes-requested, or withdrawn current version can be resubmitted; a pending version cannot be revised;
+- quote status and approval history can be visible even when rates, discounts, taxes, totals, and PDF downloads are restricted by the user's commercial permissions;
+- operations users can acknowledge handovers and authorized managers can retry eligible failed or rejected packages;
 - the bell icon opens a notification menu, where an item can be marked read and opened; and
 - self-service password recovery is intentionally not available from the sign-in screen. Contact an administrator if access must be restored.
 

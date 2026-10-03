@@ -69,12 +69,14 @@ The initial contract is created in **Draft** because the current creation form d
 
 ## Contract statuses
 
-| Status | Meaning                                                                              |
-| ------ | ------------------------------------------------------------------------------------ |
-| Draft  | Contract record exists but the signed agreement has not been uploaded and activated. |
-| Active | Signed agreement has been uploaded and the contract is in force in the CRM.          |
+| Status     | Meaning                                                                              |
+| ---------- | ------------------------------------------------------------------------------------ |
+| Draft      | Contract record exists but the signed agreement has not been uploaded and activated. |
+| Active     | Signed agreement has been uploaded and the contract is in force in the CRM.          |
+| Terminated | An authorized user has closed the contract early and recorded the reason.            |
+| Expired    | An authorized user has marked the contract expired.                                  |
 
-The current application does not automatically show separate Expired or Renewed contract statuses. Use dates and renewal information to monitor approaching or passed expiry.
+The CRM does not automatically change the status when the expiry date passes. An authorized user must review the situation and use **More → Mark as expired** or **Mark as terminated**, with a reason and confirmation. These actions cancel any outstanding renewal reminder.
 
 ## Activating a contract
 
@@ -150,7 +152,7 @@ For a contract expiring 31 December with 90 notice days, renewal action should b
 
 Renewal information appears in the contract and Renewals report. The bell menu shows renewal notifications when the background reminder runs. Review Contracts, Reports, Tasks, and the Dashboard as part of regular renewal management.
 
-The current contract page does not provide a **Mark renewed** action. If the customer renews, follow the approved process for amendment or a new contract record as directed by the process owner.
+On an Active contract, an authorized user can select **Mark renewal as done** and confirm once the renewal action has been handled. This completes the reminder task; it does not change the contract dates or create a renewed agreement. If the customer renews, follow the approved process for an amendment or a new contract record as directed by the process owner. Draft contracts do not send renewal reminders until activated.
 
 ## Operational handovers
 
@@ -173,7 +175,7 @@ The contract must be Active, and the following evidence must be complete:
 1. Open an Active contract.
 2. Select the handover action.
 3. Review each checklist item.
-4. Keep an item selected only when it is genuinely confirmed.
+4. Select each item only when it is genuinely confirmed. The checkboxes start unselected.
 5. Submit the handover.
 
 The checklist initially includes:
@@ -195,7 +197,9 @@ All required items must be confirmed. The handover is versioned so the exact inf
 | Rejected | Receiving side rejected it; review the recorded reason.        |
 | Failed   | Delivery attempt failed and requires controlled recovery.      |
 
-The current page displays handover status and rejection information when available. It does not yet provide buttons for manual retry, acceptance, or rejection. Contact the integration or CRM administrator for a failed or rejected handover. Do not create repeated handovers merely to force delivery, because stable handover identifiers are intended to prevent duplicate operational sites.
+The contract page displays handover status and rejection reasons. Authorized users can retry a Failed or Rejected handover. The separate **Handovers** menu shows handovers for operations staff; they can accept a Pending or Sent package, optionally record an external reference, or reject it with a required reason. The list also identifies packages waiting for HRMS configuration. A resolved handover cannot be acknowledged again. Do not create repeated handovers merely to force delivery, because stable handover identifiers are intended to prevent duplicate operational sites.
+
+HRMS delivery is not active until its approved connection is configured. If a retry reports that HRMS is not configured, ask the integration administrator to complete the approved setup; repeating the action will not resolve it.
 
 ## Real-world example
 
@@ -206,7 +210,7 @@ After Northstar accepts the approved quote:
 3. The signed agreement is uploaded, activating the contract.
 4. The account manager verifies the approved requirements, commercial evidence, two locations, and operational contact.
 5. A handover is created.
-6. Operations monitors its status and contacts the integration owner if it fails or is rejected.
+6. Operations opens **Handovers**, monitors delivery, and records acceptance or a reasoned rejection. An authorized manager can retry an eligible failed package after investigating the cause.
 7. Ninety days before expiry, the account manager begins the renewal review.
 
 ## Related features

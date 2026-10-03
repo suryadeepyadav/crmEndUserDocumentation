@@ -91,6 +91,7 @@
 | Rejected          | Version was declined                        |
 | Changes requested | Revision is required                        |
 | Withdrawn         | Removed from the active approval process    |
+| Superseded        | Historical pending version was replaced by newer current work |
 | Sent              | Approved version was issued to the customer |
 
 ### Task statuses
@@ -170,7 +171,7 @@ Open the lead, select **Disqualify**, choose the appropriate reason, add notes i
 
 ### Why can’t I create a quote?
 
-The opportunity must have at least one requirement, and every attached requirement must be Approved. Also confirm that your role permits quote creation.
+Every requirement already attached to the opportunity must be Approved. Also confirm that your role permits quote creation. Use a requirement whenever the service scope or price needs controlled sign-off.
 
 ### Why can’t I move an opportunity to Won?
 
@@ -178,7 +179,7 @@ It needs an approved or sent quote. Confirm the quote status first.
 
 ### How do I revise a rejected quote?
 
-Read the approval comments. The current screen does not provide New Version or Resubmit controls, so contact the authorized commercial process owner. Never send the rejected version.
+Read the approval comments, then open the current quote. Select **New version** when commercial details must change, save the new Draft, and submit it for approval. If the exact same current version should be reviewed again, the original submitter (or a System Administrator) can select **Resubmit** in **Approval history** and enter a reason. Never send the rejected version.
 
 ### What is the difference between Approved and Sent?
 
@@ -186,7 +187,7 @@ Approved means the internal approval process is complete. Sent means that approv
 
 ### Can I print or download a quote?
 
-Use **PDF** on Quote detail if your role has access. Historical versions have separate PDFs. Users with sensitive-export permission can download the selected Reports tab as CSV; the page does not have a print action.
+Use **PDF** on Quote detail only when your role has both quote-PDF download and protected commercial-rate access. Historical versions have separate PDFs for authorized users. Users with sensitive-export permission can download the selected Reports tab as CSV; the page does not have a print action.
 
 ### Why can’t I create a contract?
 
@@ -198,7 +199,10 @@ Upload the final signed PDF/JPEG/PNG agreement using **Upload and activate**. Th
 
 ### How do I retry a failed handover?
 
-The current screen has no Retry button. Contact the CRM/integration administrator. Do not create repeated handovers as a workaround.
+Users with handover-management access can open **Handovers** and select **Retry** for an eligible
+Failed or Rejected package. The same package is retried with its existing reference. If the button
+is unavailable, contact the CRM/integration administrator. Do not create repeated handovers as a
+workaround.
 
 ### Where are my notifications?
 
@@ -222,7 +226,15 @@ Read the message in the confirmation dialog. The record may have been changed by
 
 ### How do I finish a site survey?
 
-The current screen schedules the survey only. It does not yet provide completion, findings, checklist, or photo controls. Follow the approved interim process.
+Open the opportunity and find the survey under **Site surveys**. Select **Complete**, record a result for each checklist item and the visit findings, then save. Use **Documents** on the survey card for supporting files when permitted. Select **Follow-up** to create a task for any action that must happen after the visit.
+
+### Why is a pending quote missing from my Approvals inbox?
+
+The inbox shows only work for a branch you are allowed to access when your role is the role required by the current approval step. Another approver may be responsible for an earlier or later serial step. Ask the commercial process owner to confirm the policy and your branch scope; do not use another person's account.
+
+### Why can I see a quote but not its amount or PDF?
+
+Quote status and approval history can be visible without protected commercial-rate access. Rates, discounts, taxes, totals, and the PDF are intentionally hidden unless the role includes the required commercial permissions. Ask the administrator or commercial access owner to review your access if your work genuinely requires it.
 
 ### I forgot my password. What should I do?
 
@@ -300,10 +312,7 @@ Do not include your password, session information, full exported files, or custo
 
 The current application does not yet provide user-facing controls for:
 
-- requirement editing after creation;
-- site-survey completion, findings, or photo upload;
-- quote revision, withdrawal, or resubmission;
-- handover accept/reject or manual retry;
+- editing an already approved requirement;
 - self-service password recovery;
 - report print/date filters; or
 - an organization-wide attachment center.

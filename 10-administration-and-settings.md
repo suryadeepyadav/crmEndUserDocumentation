@@ -259,7 +259,7 @@ Use a valid three-letter currency. Number format affects how grouped numbers app
 
 Approval policies determine which roles must approve a quote, based on business conditions.
 
-The list shows policy name, threshold, and status. Policies can be enabled or disabled.
+The list shows policy name, threshold, and status. Policies can be created, edited, enabled, or disabled.
 
 ### Adding a policy
 
@@ -269,11 +269,25 @@ The list shows policy name, threshold, and status. Policies can be enabled or di
 | Branch           | Optional branch restriction; blank makes it global |
 | Minimum amount   | Optional quote-value threshold                     |
 | Maximum discount | Optional discount condition                        |
-| Ordered roles    | Approver roles in serial decision order            |
+| Ordered roles    | Active roles with quote-approval access, in serial decision order |
 
-Order matters. The first selected role reviews before the next. Test the policy using representative amounts and discounts before relying on it.
+Order matters. The first selected role reviews before the next. The CRM rejects a role that is
+inactive or has no quote-approval access, because that role could never complete its step. Test the
+policy using representative amounts and discounts before relying on it.
 
-Disabling a policy affects future matching. The CRM asks for confirmation before disabling it. Do not use enable/disable casually while quotes are under review.
+Current policy matching uses branch, minimum quote amount, and maximum line discount. A separate
+commercial-exception trigger is not configured until HHCIL defines the business rule and approval
+owner for it.
+
+### Editing, enabling, or disabling a policy
+
+Select **Edit** beside a policy to change its name, branch, thresholds, or ordered roles. Save the
+change only after checking it against representative quote amounts and discounts. The revised policy
+is used for future quote submissions; an approval request that was already submitted keeps the
+policy rules captured at submission.
+
+Disabling a policy affects future matching. The CRM asks for confirmation before disabling it. Do
+not use enable/disable casually while quotes are under review.
 
 ## Industries
 

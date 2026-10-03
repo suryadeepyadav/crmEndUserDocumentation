@@ -73,6 +73,7 @@ The navigation may contain:
 - Tasks
 - Approvals
 - Contracts
+- Handovers
 - Reports
 - Administration
 
